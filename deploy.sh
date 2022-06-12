@@ -3,6 +3,7 @@ pm2 stop go_api &&
 git pull &&
 pm2 start go_api &&
 cd projects/react-app/ &&
+pnpm i &&
 pnpm build &&
 rsync -a --delete dist/ /var/www/static/ &&
 pm2 start go_api &&
