@@ -1,7 +1,7 @@
 cd ../workspace/monorepo/ &&
-pm2 stop go_api &&
+# pm2 stop go_api &&
 git pull &&
-pm2 start go_api &&
+# pm2 start go_api &&
 cd projects/react-app/ &&
 pnpm i &&
 pnpm build &&
